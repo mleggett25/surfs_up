@@ -43,3 +43,37 @@ june_query = session.query(Measurement.date, Measurement.tobs).filter(extract('m
 june_results = list(june_query)
 ```
 
+I then created a DataFrame from the list of temperatures and generated the summary statistics for the June temperatures.
+
+```
+june_df = pd.DataFrame(june_results, columns=['date','temperature'])
+june_df.set_index(june_df['date'], inplace=True)
+print(june_df.to_string(index=False))
+
+june_df.describe()
+```
+
+The output from running the code produced the following summary statistics for the June temperatures:
+
+![June Summary Statistics](./Resources/june_stats.PNG)
+
+To find the temperature data for the month of December in Oahu, I wrote a script similar to what was written to find the June temperatures where the Measurement table is filtered by date, created into a DataFrame, and then the summary statistics were generated.
+
+```
+december_results = []
+december_query = session.query(Measurement.date, Measurement.tobs).filter(extract('month', Measurement.date) == 12)
+
+december_results = list(december_query)
+
+december_df = pd.DataFrame(december_results, columns=['date','temperature'])
+december_df.set_index(december_df['date'], inplace=True)
+print(december_df.to_string(index=False))
+
+december_df.describe()
+```
+
+The output from running the code produced the following summary statistics for the December temperatures:
+
+![December Summary Statistics](./Resources/dec_stats.PNG)
+
+## Summary
