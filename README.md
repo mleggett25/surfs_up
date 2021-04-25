@@ -76,4 +76,9 @@ The output from running the code produced the following summary statistics for t
 
 ![December Summary Statistics](./Resources/dec_stats.PNG)
 
+### Summary of Results
+- Generally, as one might predict, the December temperatures are overall lower than the June temperatures. The minimum December temperature was 56°F while the minimum June temperature was 64°F, with temperatures in each of the December quartiles lower than the June quartiles.
+- However, the mean temperature between the June and December months only had a difference of about 4 degrees Fahrenheit. The June mean tmeperature was 75°F and the December mean temperature was 71°F.
+- While the December dataset has about 200 less temperatures than the June dataset, I feel the datasets can be safely compared as the difference between the number of datapoints is not too large and the standard deviations of both datasets are similar (3.26 for June and 3.75 for December).
+
 ## Summary
