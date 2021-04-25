@@ -34,7 +34,7 @@ session = Session(engine)
 
 To find the temperature data for the month of June in Oahu, I wrote a query that filters the date column from the Measurement table and converted the June temperatures to a list.
 
-``
+```
 from sqlalchemy import extract
 
 june_results = []
