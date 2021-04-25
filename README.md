@@ -82,3 +82,4 @@ The output from running the code produced the following summary statistics for t
 - While the December dataset has about 200 less temperatures than the June dataset, I feel the datasets can be safely compared as the difference between the number of datapoints is not too large and the standard deviations of both datasets are similar (3.26 for June and 3.75 for December).
 
 ## "Surf's Up" Analysis Summary
+I believe that the results of the summary statistics show that a surf and ice cream shop business is sustainable year-round. While certainly December and the winter months in general will have colder days, we can see that it is not, on average, significantly different enough that the shop would not be sustainable.
